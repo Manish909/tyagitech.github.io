@@ -1,0 +1,44 @@
+doctype html
+html
+    head
+       title My First Website.
+       style
+         include ../static/style.css
+    body
+        nav#navbar.top 
+            ul
+               div#logo 
+                   img(src="/static/img//logo.jpg", alt="")
+                   |  Manish
+               li #[a(href="/") Home]
+               li #[a(href="/") About us]
+               li #[a(href="/") Services]
+               li #[a(href="/") Contact us]
+        section#introsection
+           div Welcome to Graphic Era Admission Enqiry Portal. 
+           div.small Know about your faviorate course.
+        section#missionsection
+           h3 Our Mission 
+           div.card 
+              h3 About Graphic Era.
+              div.card-content 
+                p The Best Collage Of Dehradun.
+                p We help you to choose best collage.
+           div.card 
+              h3 Choose The course You Like.
+              div.card-content 
+                p This collgae have various of courses.
+                p You can choose according to your intrest.
+                p For More Enqiry Fill the Form Of Contact Us.
+                p We Will Contact you Soon.  
+        section#sponsersection
+           h3 Our Supporter 
+           div.content 
+            p Graphic Era is best Collage of Dehradun.
+            p All Teahers are Friendly.
+            p Collage Provides various Facilities to their student.  
+        footer#footer
+           | copyright @ Manish Tyagi | all right reserved          
+        script
+          include ../static/index.js    
+    
